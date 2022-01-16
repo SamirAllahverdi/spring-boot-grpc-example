@@ -1,8 +1,8 @@
-package com.ferhad.greetingclient.controller;
+package com.samir.greetingclient.controller;
 
-import com.ferhad.grpc.GreetingRequest;
-import com.ferhad.grpc.GreetingResponse;
-import com.ferhad.grpc.GreetingServiceGrpc;
+import com.samir.grpc.GreetingRequest;
+import com.samir.grpc.GreetingResponse;
+import com.samir.grpc.GreetingServiceGrpc;
 import net.devh.boot.grpc.client.inject.GrpcClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,9 +25,6 @@ public class GreetingController {
                 .setLastName(lastName)
                 .build());
 
-        return ResponseEntity
-                .ok(
-                        response.getMessage()
-                );
+        return ResponseEntity.ok(response.getMessage());
     }
 }

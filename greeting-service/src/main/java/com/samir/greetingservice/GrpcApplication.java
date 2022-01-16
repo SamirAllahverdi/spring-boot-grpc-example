@@ -1,13 +1,13 @@
-package com.ferhad.greetingclient;
+package com.samir.greetingservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GreetingClientApplication {
+public class GrpcApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GreetingClientApplication.class, args);
+		SpringApplication.run(GrpcApplication.class, args);
 	}
 
 }

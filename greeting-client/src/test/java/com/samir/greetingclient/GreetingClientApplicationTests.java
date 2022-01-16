@@ -1,10 +1,10 @@
-package com.ferhad.greetingservice;
+package com.samir.greetingclient;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GrpcApplicationTests {
+class GreetingClientApplicationTests {
 
 	@Test
 	void contextLoads() {

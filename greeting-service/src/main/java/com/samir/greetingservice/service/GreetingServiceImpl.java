@@ -1,6 +1,6 @@
-package com.ferhad.greetingservice.service;
+package com.samir.greetingservice.service;
 
-import com.ferhad.grpc.*;
+import com.samir.grpc.*;
 import io.grpc.stub.StreamObserver;
 import net.devh.boot.grpc.server.service.GrpcService;
 
@@ -13,7 +13,7 @@ public class GreetingServiceImpl extends GreetingServiceGrpc.GreetingServiceImpl
         String lastName = request.getLastName();
 
         GreetingResponse response = GreetingResponse.newBuilder()
-                .setMessage("Hello, " + firstName + " " + lastName)
+                .setMessage(String.format("Hello, %s %s", firstName, lastName))
                 .build();
 
         responseObserver.onNext(response);
